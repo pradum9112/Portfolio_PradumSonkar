@@ -67,6 +67,10 @@ function Skills() {
                   <img src={meter1} alt="Image" />
                   <h5>Frontend Developer</h5>
                 </div>
+                <div className="item">
+                  <img src={meter3} alt="Image" />
+                  <h5>Google Cloud Plateform(GCP)</h5>
+                </div>
               </Carousel>
             </div>
           </Col>
