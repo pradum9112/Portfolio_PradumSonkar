@@ -57,7 +57,7 @@ function Banner() {
 
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container >
         <Row className="align-items-center">
         <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
@@ -75,7 +75,8 @@ function Banner() {
                 <div className="col">
                   <p><strong>Degree Pursuing:</strong> B-Tech I.T</p>
                   <p><strong>Graduation Year:</strong> 2024</p>
-                  <p><strong>Mobile Number:</strong> +91 9112526710</p>
+                  <p><strong>Mobile no :</strong> +91 9112526710</p>
+                  <p><strong>Email :</strong> pradumsonkar9112@gmail.com</p>
 
                 </div>
                 <div className="col">
@@ -87,8 +88,8 @@ function Banner() {
             </div>
             <Cv />
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img src={pradumImg} alt="Header Img" style={{ width: '400px', height: '400px', borderRadius: '50%',padding:"20px", marginLeft:"40px"}}  className="profile-img" />
+          <Col xs={12} md={6} xl={5} className="portfolio-section">
+            <img src={pradumImg} alt="Header Img" style={{ width: '400px', height: '400px',paddingRight:"17px", borderRadius: '50%'}}  className="portfolio-section" />
            
           </Col>
          

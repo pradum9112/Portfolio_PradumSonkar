@@ -18,7 +18,7 @@ const Footer = () => {
         <a href="#" className="footer_logo">
           Designed and Developed by Pradum Sonkar
         </a>
-        <ul className="permalinks">
+        <ul className="permalinks" style={{ marginRight: '23px'}}>
           <li>
             <a href="#home">Home</a>
           </li>
@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="#projects">Project</a>
           </li>
         </ul>
-        <div className="social-icon ">
+        <div className="social-icon text-center">
           <a href="https://www.linkedin.com/in/pradum-sonkar//" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <img src={navIcon1} alt="LinkedIn" />
           </a>
@@ -53,18 +53,18 @@ const Footer = () => {
            <img src={whatsappIcon} alt="whatsapp" />
           </a>
 
-          {/* Email Link */}
+          {/* Email Link
           <a
-            href={mailtoLink} // Corrected email link
+            href={mailtoLink} 
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email me"
           >
             <img src={emailIcon} alt="email" />
-          </a>
+          </a> */}
         </div>
 
-        <div className="footer_copyright">
+        <div className="footer_copyright text-center" style={{ marginLeft: '3px'}}>
           <small>© {currentYear} Copy rights. All rights reserved.</small>
         </div>
       </div>

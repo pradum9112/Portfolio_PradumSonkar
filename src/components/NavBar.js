@@ -109,14 +109,14 @@ function NavBar() {
           </a>
 
           {/* Email Link */}
-          <a
+          {/* <a
             href={mailtoLink} // Corrected email link
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email me"
           >
             <img src={emailIcon} alt="email" />
-          </a>
+          </a> */}
               </div>
               <HashLink to="#connect">
                 <button className="vvd" onClick={() => console.log("connect")}>
