@@ -36,13 +36,7 @@ const Footer = () => {
           <a href="https://github.com/pradum9112/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <img src={navIcon2} alt="GitHub" />
           </a>
-          <a
-            href="https://www.instagram.com/pradum_sonkar_00/?%2F"
-            target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-          >
-            <img src={navIcon3} alt="Instagram" />
-          </a>
-
+         
           {/* WhatsApp Link */}
           <a
             href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`}
@@ -53,7 +47,7 @@ const Footer = () => {
            <img src={whatsappIcon} alt="whatsapp" />
           </a>
 
-          {/* Email Link
+          {/* Email Link */}
           <a
             href={mailtoLink} 
             target="_blank"
@@ -61,7 +55,16 @@ const Footer = () => {
             aria-label="Email me"
           >
             <img src={emailIcon} alt="email" />
+          </a>
+          
+          {/* instagram */}
+           {/* <a
+            href="https://www.instagram.com/pradum_sonkar_00/?%2F"
+            target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+          >
+            <img src={navIcon3} alt="Instagram" />
           </a> */}
+
         </div>
 
         <div className="footer_copyright text-center" style={{ marginLeft: '3px'}}>

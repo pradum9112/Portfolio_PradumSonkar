@@ -66,9 +66,7 @@ function Banner() {
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Hi! I'm Pradum Sonkar, a dedicated professional passionate about building end-to-end products. 
-              I have gained valuable experience, developed various skills, and successfully completed multiple projects. 
-              I enjoy learning, developing, and collaborating to create successful projects.
+            Hi!, I'm Pradum Sonkar, a passionate developer with experience in building end-to-end products. I have worked on microservices, Google Cloud Platform (GCP), and secure API development. Through various projects, I have gained strong skills in backend development, security, and cloud integration. I enjoy learning, problem-solving, and collaborating to build efficient and scalable solutions.
             </p>
             <div className="personal-details">
               <div className="row">

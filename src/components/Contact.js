@@ -15,7 +15,7 @@ function Contact() {
       const result = await emailjs.sendForm(
         "service_b965ik2",
         "template_qpajp64",
-        formRef.current, // Correct way to send form data
+        formRef.current,
         "qG5YGmPoBUyWdLsLg"
       );
       console.log("Email sent successfully:", result.text);
@@ -42,7 +42,7 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    name="from_name" // Ensure this matches your EmailJS template
+                    name="from_name" 
                     required
                   />
                 </Col>
@@ -50,7 +50,7 @@ function Contact() {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    name="email_id" // Ensure this matches your EmailJS template
+                    name="email_id" 
                     required
                   />
                 </Col>

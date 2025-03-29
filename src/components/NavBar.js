@@ -92,31 +92,36 @@ function NavBar() {
                 <a href="https://github.com/pradum9112/" target="_blank">
                   <img src={navIcon2} alt="" />
                 </a>
+                
+
+                 {/* WhatsApp Link */}
                 <a
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact me on WhatsApp"
+                >
+                <img src={whatsappIcon} alt="whatsapp" />
+                </a>
+
+                 {/* Email Link */}
+                <a
+                  href={mailtoLink} // Corrected email link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email me"
+                >
+                  <img src={emailIcon} alt="email" />
+                </a>
+                {/* instagram */}
+                {/* <a
                   href="https://instagram.com/pradum_sonkar_00?/"
                   target="_blank"
                 >
                   <img src={navIcon3} alt="" />
-                </a>
-                 {/* WhatsApp Link */}
-          <a
-            href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Contact me on WhatsApp"
-          >
-           <img src={whatsappIcon} alt="whatsapp" />
-          </a>
+                </a> */}
 
-          {/* Email Link */}
-          {/* <a
-            href={mailtoLink} // Corrected email link
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Email me"
-          >
-            <img src={emailIcon} alt="email" />
-          </a> */}
+               
               </div>
               <HashLink to="#connect">
                 <button className="vvd" onClick={() => console.log("connect")}>
