@@ -5,7 +5,7 @@ const Cv = () => {
   return (
     <div className="cta">
       <a
-        href="https://drive.google.com/file/d/1_dbWNv1UpS_bSg41-jz8bDN0Dv8XqwmH/view?usp=sharing"
+        href="https://drive.google.com/file/d/1ezK_G0HC-KuAtTQQcdeLDS-O24QU98Ec/view?usp=sharing"
         download
         className="btn"
         target="_blank"
