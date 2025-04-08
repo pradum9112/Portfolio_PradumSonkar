@@ -8,13 +8,13 @@ import mlcertificate from "../assets/img/ml-certificates.png"
 const certificates = [
   {
     id: 1,
-    link: "https://drive.google.com/file/d/1Y3NdISYO1eRoVSNyzazKySKg1AXUFCkl/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1rwTV1zKDk7mXdsokYZkXMVulpiEey093/view?usp=sharing",
     title: "CEOITBOX Software Developer",
     image: ceoitbox,
   },
   {
     id: 2,
-    link: "https://drive.google.com/file/d/1YpLk3UTvOkLYfoCDlBaATxSGyR_IUquA/view?usp=sharing",
+    link: "https://drive.google.com/file/d/12Hwh4_B_3KLXpF6BvOvVbdeuAIRuhR6x/view?usp=sharing",
     title: "Padel India Software Developer",
     image: padelindia,
   },
