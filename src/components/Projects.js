@@ -22,7 +22,7 @@ const data = [
     video: "https://www.youtube-nocookie.com/embed/PqIaXGO0-r4", 
     title: "My-AmazonClone",
     github: "https://github.com/pradum9112/My-AmazonClone.git",
-    Live: "http://to-do-list1-d80oao1cv-pradum9112.vercel.app",
+    Live: "https://amazone-clone-wgb4.onrender.com/",
   },
   {
     id: 4,
