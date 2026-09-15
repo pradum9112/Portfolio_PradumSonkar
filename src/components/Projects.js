@@ -1,14 +1,15 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import dsaAlgoCraftSeries from "../assets/img/dsaAlgoCraft.png"
 
 const data = [
   {
     id: 1,
     video: "https://www.youtube-nocookie.com/embed/XfIalGmJsuw", 
     title: "ToLet-RoomOnRent",
-    github: "https://github.com/pradum9112/Tolet-RoomOnRent",
-    Live: "https://to-let-room-on-rent.vercel.app/",
+    github: "https://github.com/pradum9112/ToLet-RoomRentify",
+    Live: "https://to-let-room-rentify.vercel.app/",
   },
   {
     id: 2,
@@ -19,44 +20,21 @@ const data = [
   },
   {
     id: 3,
-    video: "https://www.youtube-nocookie.com/embed/PqIaXGO0-r4", 
-    title: "My-AmazonClone",
-    github: "https://github.com/pradum9112/My-AmazonClone.git",
-    Live: "http://to-do-list1-d80oao1cv-pradum9112.vercel.app",
-  },
-  {
-    id: 4,
-    video: "https://www.youtube-nocookie.com/embed/BeINkv-dccU", 
-    title: "ToDoList",
-    github: "https://github.com/pradum9112/ToDoList.git",
-    Live: "https://to-do-list1-d80oao1cv-pradum9112.vercel.app/",
-  },
-  {
-    id: 5,
-    video: "https://www.youtube-nocookie.com/embed/5gTPXBGctgc", 
-    title: "ReactQuizApp",
-    github: "https://github.com/pradum9112/ReactQuizApp.git",
-    Live: "https://react-quiz-app-red.vercel.app",
-  },
+    type: "DSA", 
+    title: "AlgoCraft - Daily DSA Series",
+    description: "Daily Data Structures & Algorithms problem solving covering LeetCode, GFG, and core CS patterns.",
+    image: `${dsaAlgoCraftSeries}`,
+    github: "https://github.com/pradum9112/AlgoCraftSeries-180DaysOfDSA",
+    Live : "https://github.com/pradum9112/AlgoCraftSeries-180DaysOfDSA"
+   
+  }
 ];
 
 const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 3,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
+  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 3 },
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
 };
 
 const Portfolio = () => {
@@ -64,27 +42,35 @@ const Portfolio = () => {
     <section id="projects" className="portfolio-section">
       <h1 className="project_header">Projects</h1>
       <Carousel responsive={responsive} infinite={true} className="portfolio-slider" style={{ backgroundColor: 'black', margin: '20px 20px' }}>
-        {data.map(({ id, video, title, github, Live }) => (
-          <div key={id} className="portfolio_item" style={{ backgroundColor: 'black', margin: '20px 20px' }}>
+        {data.map((item) => (
+          <div key={item.id} className="portfolio_item" style={{ backgroundColor: 'black', margin: '20px 20px' }}>
             <div className="portfolio_item-video">
-              <iframe
-                width="100%" 
-                height="250" 
-                src={video}
-                title={title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
+              {item.video ? (
+                <iframe
+                  width="100%" 
+                  height="250" 
+                  src={item.video}
+                  title={item.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              ) : (
+                <img 
+                  src={item.image} 
+                  alt={item.title} 
+                  style={{ width: "100%", height: "250px", objectFit: "contain", backgroundColor: "#000" }} 
+                />
+              )}
             </div>
-            <h3>{title}</h3>
+            <h3>{item.title}</h3>
             <div className="portfolio_item-cta">
-              <a href={github} className="project_btn " target="_blank" rel="noopener noreferrer">
+              <a href={item.github} className="project_btn" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href={Live} className="project_btn " target="_blank" rel="noopener noreferrer">
-                Live
+              <a href={item.Live} className="project_btn" target="_blank" rel="noopener noreferrer">
+                {item.type === "dsa" ? "Explore Repo" : "Live"}
               </a>
             </div>
           </div>
