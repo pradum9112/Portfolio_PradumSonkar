@@ -9,6 +9,7 @@ const Cv = () => {
         download
         className="btn"
         target="_blank"
+        rel="noreferrer"
       >
         Download CV
       </a>

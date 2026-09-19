@@ -2,7 +2,6 @@ import React from "react";
 
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.png";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 import whatsappIcon from "../assets/img/whatsappIcon.svg";
 import emailIcon from "../assets/img/emailIcon.svg";
 
@@ -10,12 +9,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const whatsappNumber = "9112526710"; 
   const whatsappMessage = "Hello, I'm reaching out regarding potential opportunities."; 
-  const mailtoLink = "mailto:pradumsonkar9112@gmail.com?subject=Inquiry&body=Hello, I'm reaching out regarding potential opportunities."; // Corrected mailto link
+  const mailtoLink = "mailto:pradumsonkar9112@gmail.com?subject=Inquiry&body=Hello, I'm reaching out regarding potential opportunities.";
 
   return (
     <footer>
       <div className="container">
-        <a href="#" className="footer_logo">
+        <a href="#home" className="footer_logo">
           Designed and Developed by Pradum Sonkar
         </a>
         <ul className="permalinks" style={{ marginRight: '23px'}}>
@@ -56,15 +55,6 @@ const Footer = () => {
           >
             <img src={emailIcon} alt="email" />
           </a>
-          
-          {/* instagram */}
-           {/* <a
-            href="https://www.instagram.com/pradum_sonkar_00/?%2F"
-            target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-          >
-            <img src={navIcon3} alt="Instagram" />
-          </a> */}
-
         </div>
 
         <div className="footer_copyright text-center" style={{ marginLeft: '3px'}}>

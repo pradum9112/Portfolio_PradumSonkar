@@ -3,17 +3,14 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import pradumImg from "../assets/img/pradumImg.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.png";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import whatsappIcon from "../assets/img/whatsappIcon.svg";
 import emailIcon from "../assets/img/emailIcon.svg";
 
-
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  
 
   useEffect(() => {
     const onScroll = () => {
@@ -33,11 +30,9 @@ function NavBar() {
     setActiveLink(value);
   };
 
-
   const whatsappNumber = "9112526710"; 
   const whatsappMessage = "Hello, I'm reaching out regarding potential opportunities."; 
-  const mailtoLink = "mailto:pradumsonkar9112@gmail.com?subject=Inquiry&body=Hello, I'm reaching out regarding potential opportunities."; // Corrected mailto link
-
+  const mailtoLink = "mailto:pradumsonkar9112@gmail.com?subject=Inquiry&body=Hello, I'm reaching out regarding potential opportunities.";
 
   return (
     <Router>
@@ -86,46 +81,41 @@ function NavBar() {
                 <a
                   href="https://www.linkedin.com/in/pradum-sonkar/"
                   target="_blank"
+                  rel="noreferrer"
                 >
-                  <img src={navIcon1} alt="" />
+                  <img src={navIcon1} alt="LinkedIn" />
                 </a>
-                <a href="https://github.com/pradum9112/" target="_blank">
-                  <img src={navIcon2} alt="" />
+                <a
+                  href="https://github.com/pradum9112/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={navIcon2} alt="GitHub" />
                 </a>
-                
 
-                 {/* WhatsApp Link */}
+                {/* WhatsApp Link */}
                 <a
                   href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Contact me on WhatsApp"
                 >
-                <img src={whatsappIcon} alt="whatsapp" />
+                  <img src={whatsappIcon} alt="whatsapp" />
                 </a>
 
-                 {/* Email Link */}
+                {/* Email Link */}
                 <a
-                  href={mailtoLink} // Corrected email link
+                  href={mailtoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Email me"
                 >
                   <img src={emailIcon} alt="email" />
                 </a>
-                {/* instagram */}
-                {/* <a
-                  href="https://instagram.com/pradum_sonkar_00?/"
-                  target="_blank"
-                >
-                  <img src={navIcon3} alt="" />
-                </a> */}
-
-               
               </div>
               <HashLink to="#connect">
                 <button className="vvd" onClick={() => console.log("connect")}>
-                  <span>Lets's Connect</span>
+                  <span>Let's Connect</span>
                 </button>
               </HashLink>
             </span>
