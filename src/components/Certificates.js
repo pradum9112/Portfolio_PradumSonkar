@@ -8,20 +8,20 @@ import mlcertificate from "../assets/img/ml-certificates.png"
 const certificates = [
   {
     id: 1,
-    link: "https://drive.google.com/file/d/1Y3NdISYO1eRoVSNyzazKySKg1AXUFCkl/view?usp=sharing",
-    title: "CEOITBOX Software Developer",
+    link: "https://drive.google.com/file/d/1XfTkdhpxOJzrT3Ah3a0lpNY5zsOMygfi/view?usp=sharing",
+    title: "CEOITBOX SDE Intern",
     image: ceoitbox,
   },
   {
     id: 2,
-    link: "https://drive.google.com/file/d/1YpLk3UTvOkLYfoCDlBaATxSGyR_IUquA/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1H2zYd23YmCOQN6KE4ElKj6OSyU0s36dy/view?usp=sharing",
     title: "Padel India Software Developer",
     image: padelindia,
   },
   
   {
     id: 3,
-    link: "https://drive.google.com/file/d/1Iqmt8iAfIaEBEOHwNxMtx-SkU3MabZlx/view?usp=sharing",
+    link: "https://drive.google.com/file/d/11-OpGVZjh5lSl6FpMDI2GEj5ST7IWUQZ/view?usp=sharing",
     title: "Machine Learning with Python",
     image: mlcertificate,
   },
