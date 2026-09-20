@@ -55,7 +55,7 @@ const Cv = () => {
 
       {/* Download CV Link */}
       <a
-        href="https://drive.google.com/file/d/1OtVTX9T7uagp_X4Scg_ird7VP5V_HSwJ/view?usp=sharing"
+        href="https://drive.google.com/file/d/1Otzn-pj4micKPMwczcmIP6EXEu19EVaK/view?usp=sharing"
         download
         className="cv-btn-download"
         target="_blank"
