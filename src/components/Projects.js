@@ -6,14 +6,14 @@ import dsaAlgoCraftSeries from "../assets/img/dsaAlgoCraft.png";
 const data = [
   {
     id: 1,
-    video: "https://www.youtube-nocookie.com/embed/XfIalGmJsuw", 
-    title: "ToLet-RoomOnRent",
+    video: "https://www.youtube.com/embed/I9pVL7xlFK4", 
+    title: "ToLet-RoomRentify",
     github: "https://github.com/pradum9112/ToLet-RoomRentify",
     Live: "https://to-let-room-rentify.vercel.app/",
   },
   {
     id: 2,
-    video: "https://www.youtube-nocookie.com/embed/Txgg_7HKDLA", 
+    video: "https://youtube.com/embed/la0IQDUz_kw", 
     title: "ChatHub",
     github: "https://github.com/pradum9112/ChatHub",
     Live: "https://chatapp-ndtd.onrender.com/",
